@@ -2,7 +2,8 @@
 #include <locale.h>
 #include <windows.h>
 
-int main(void) {
+int main()
+{
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
     setlocale(LC_ALL, ".UTF-8");
@@ -12,9 +13,12 @@ int main(void) {
     printf("Digite sua idade: ");
     scanf("%d", &idade);
 
-    if (idade >= 18 && idade <= 65) {
+    if (idade >= 18 && idade <= 65)
+    {
         printf("O voto é obrigatório!\n");
-    } else {
+    }
+    else
+    {
         printf("O voto não é obrigatório!\n");
     }
 
