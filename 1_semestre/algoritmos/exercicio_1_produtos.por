@@ -48,7 +48,7 @@ programa {
                 sinal = "" 
             }
 
-            escreva("----------------------------------------------\n")
+            escreva("---------------------------------------\n")
             escreva("Produto:   ", nome, "\n")
             escreva("Anterior: R$ ", preco_anterior, "\n")
             escreva("Atual: R$ ", preco_atual, "\n")
@@ -57,6 +57,6 @@ programa {
             escreva("Observação: ", observacao, "\n")
         }
 
-        escreva("----------------------------------------------\n")
+        escreva("---------------------------------------\n")
     }
 }
