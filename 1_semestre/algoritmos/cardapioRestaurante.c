@@ -5,13 +5,15 @@ int main()
 {
     int opcao;
     int bebida, prato, sobremesa;
-    float precoBebida, precoPrato, precoSobremesa;
-    float total;
-    int descontoPrecoMinimo = 30;
+
+    float total = 0;
+
+    float descontoPrecoMinimo = 25;
     int descontoPercentual = 10;
 
+    // Boas vindas
     printf("Seja bem-vindo ao restaurante!\n");
-    printf("Eu sou a Duda, assistente do cardapio digital\n");
+    printf("Eu sou a Duda, assistente do cardapio digital!\n");
 
     do
     {
@@ -19,6 +21,7 @@ int main()
         printf("1 - Bebidas\n");
         printf("2 - Pratos principais\n");
         printf("3 - Sobremesas\n");
+        printf("4 - Finalizar pedido\n");
         printf("0 - Sair\n");
         printf("Opcao: ");
 
@@ -30,34 +33,41 @@ int main()
         {
         case 1:
             printf("\nEscolha uma bebida:\n");
-            printf("1 - Agua (R$ 2)\n");
-            printf("2 - Refrigerante (R$ 5)\n");
-            printf("3 - Suco (R$ 4)\n");
+            printf("1 - Agua (R$ 2,00)\n");
+            printf("2 - Refrigerante (R$ 5,00)\n");
+            printf("3 - Suco (R$ 4,00)\n");
+            printf("0 - Voltar\n");
             printf("Opcao: ");
+
             scanf("%d", &bebida);
 
             switch (bebida)
             {
             case 1:
-                precoBebida = 2;
+                total += 2;
+                printf("Agua adicionada ao pedido!\n");
                 break;
             case 2:
-                precoBebida = 5;
+                total += 5;
+                printf("Refrigerante adicionada ao pedido!\n");
                 break;
             case 3:
-                precoBebida = 4;
+                total += 4;
+                printf("Suco adicionada ao pedido!\n");
+                break;
+            case 0:
                 break;
             default:
-                printf("Opção invalida!\n");
-                precoBebida = 0;
-                break;
+                printf("Opcao invalida!\n");
             }
             break;
+
         case 2:
             printf("\nEscolha um prato principal:\n");
             printf("1 - Frango com arroz (R$ 15,00)\n");
             printf("2 - Bife com batata (R$ 20,00)\n");
             printf("3 - Massa (R$ 12,00)\n");
+            printf("0 - Voltar\n");
             printf("Opcao: ");
 
             scanf("%d", &prato);
@@ -65,18 +75,21 @@ int main()
             switch (prato)
             {
             case 1:
-                precoPrato = 15;
+                total += 15;
+                printf("Frango com arroz adicionado ao pedido!\n");
                 break;
             case 2:
-                precoPrato = 20;
+                total += 20;
+                printf("Bife com batata adicionado ao pedido!\n");
                 break;
             case 3:
-                precoPrato = 12;
+                total += 12;
+                printf("Massa adicionada ao pedido!\n");
+                break;
+            case 0:
                 break;
             default:
-                printf("Opção inválida!\n");
-                precoPrato = 0;
-                break;
+                printf("Opcao invalida!\n");
             }
             break;
         case 3:
@@ -84,24 +97,45 @@ int main()
             printf("1 - Pudim (R$ 8,00)\n");
             printf("2 - Sorvete (R$ 7,00)\n");
             printf("3 - Fruta (R$ 5,00)\n");
+            printf("0 - Voltar\n");
             printf("Opcao: ");
+
             scanf("%d", &sobremesa);
 
             switch (sobremesa)
             {
             case 1:
-                precoSobremesa = 8;
+                total += 8;
+                printf("Pudim adicionado ao pedido!\n");
                 break;
             case 2:
-                precoSobremesa = 7;
+                total += 7;
+                printf("Sorvete adicionado ao pedido!\n");
                 break;
             case 3:
-                precoSobremesa = 5;
+                total += 5;
+                printf("Fruta adicionada ao pedido!\n");
+                break;
+            case 0:
                 break;
             default:
                 printf("Opcao invalida!\n");
-                precoSobremesa = 0;
-                break;
+            }
+            break;
+        case 4:
+            if (total > 0)
+            {
+                float totalComDesconto = total;
+                if (total > descontoPrecoMinimo)
+                {
+                    totalComDesconto -= total * descontoPercentual / 100;
+                    printf("\nDesconto de %d%% aplicado!\n", descontoPercentual);
+                }
+                printf("\nTotal do pedido: %.2f\n", totalComDesconto);
+            }
+            else
+            {
+                printf("Nenhum item foi adicionado ao pedido.\n");
             }
             break;
         case 0:
@@ -109,25 +143,8 @@ int main()
             break;
         default:
             printf("Opcao invalida!\n");
-            break;
         }
 
-        if (opcao >= 1 && opcao <= 3)
-        {
-            total = precoBebida + precoPrato + precoSobremesa;
-
-            if (total > descontoPrecoMinimo)
-            {
-                total -= total * descontoPercentual / 100;
-            }
-
-            printf("\nTotal do pedido: R$ %.2f\n", total);
-
-            if (total > descontoPrecoMinimo)
-            {
-                printf("Desconto de %d%% aplicado!\n", descontoPercentual);
-            }
-        }
     } while (opcao != 0);
 
     return 0;
