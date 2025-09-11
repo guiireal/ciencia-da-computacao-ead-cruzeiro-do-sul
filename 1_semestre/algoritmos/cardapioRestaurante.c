@@ -3,6 +3,7 @@
 
 int main()
 {
+    // Variáveis utilizadas
     int opcao;
     int bebida, prato, sobremesa;
 
@@ -17,6 +18,7 @@ int main()
 
     do
     {
+        // Categorias
         printf("\nEscolha uma categoria:\n");
         printf("1 - Bebidas\n");
         printf("2 - Pratos principais\n");
@@ -29,6 +31,7 @@ int main()
 
         system("cls");
 
+        // Opções de cada categoria
         switch (opcao)
         {
         case 1:
@@ -126,6 +129,8 @@ int main()
             if (total > 0)
             {
                 float totalComDesconto = total;
+
+                // Lógica do desconto
                 if (total > descontoPrecoMinimo)
                 {
                     totalComDesconto -= total * descontoPercentual / 100;
