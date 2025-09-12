@@ -2,18 +2,18 @@
 
 int main()
 {
-    int idadePermitida = 18;
+    int idade_permitida = 18;
     int idade;
-    int cadastroValido = 1;
+    int cadastro_valido = 1;
 
     printf("Digite sua idade: ");
     scanf("%d", &idade);
 
-    if (idade >= idadePermitida && cadastroValido == 1)
+    if (idade >= idade_permitida && cadastro_valido == 1)
     {
         printf("Idade %d ok e cadastro valido!.\n", idade);
     }
-    else if (idade < idadePermitida)
+    else if (idade < idade_permitida)
     {
         printf("Idade %d nao permitida!.\n", idade);
     }

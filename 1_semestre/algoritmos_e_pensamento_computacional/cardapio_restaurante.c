@@ -9,8 +9,8 @@ int main()
 
     float total = 0;
 
-    float descontoPrecoMinimo = 25;
-    int descontoPercentual = 10;
+    float desconto_preco_minimo = 25;
+    int desconto_percentual = 10;
 
     // Boas vindas
     printf("Seja bem-vindo ao restaurante!\n");
@@ -131,10 +131,10 @@ int main()
                 float totalComDesconto = total;
 
                 // Lógica do desconto
-                if (total > descontoPrecoMinimo)
+                if (total > desconto_preco_minimo)
                 {
-                    totalComDesconto -= total * descontoPercentual / 100;
-                    printf("\nDesconto de %d%% aplicado!\n", descontoPercentual);
+                    totalComDesconto -= total * desconto_percentual / 100;
+                    printf("\nDesconto de %d%% aplicado!\n", desconto_percentual);
                 }
                 printf("\nTotal do pedido: %.2f\n", totalComDesconto);
             }
