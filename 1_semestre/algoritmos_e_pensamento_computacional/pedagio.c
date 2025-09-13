@@ -38,6 +38,8 @@ int main()
     }
 
     mostrar_resultados(carros_por_dia, total_semanal);
+
+    return 0;
 }
 
 /*
