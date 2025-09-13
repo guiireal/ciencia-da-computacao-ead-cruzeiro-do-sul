@@ -128,15 +128,15 @@ int main()
         case 4:
             if (total > 0)
             {
-                float totalComDesconto = total;
+                float total_com_desconto = total;
 
                 // Lógica do desconto
                 if (total > desconto_preco_minimo)
                 {
-                    totalComDesconto -= total * desconto_percentual / 100;
+                    total_com_desconto -= total * desconto_percentual / 100;
                     printf("\nDesconto de %d%% aplicado!\n", desconto_percentual);
                 }
-                printf("\nTotal do pedido: %.2f\n", totalComDesconto);
+                printf("\nTotal do pedido: %.2f\n", total_com_desconto);
             }
             else
             {
