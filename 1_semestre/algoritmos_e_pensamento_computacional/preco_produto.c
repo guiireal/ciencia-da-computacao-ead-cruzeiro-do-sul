@@ -72,8 +72,10 @@ void bubbleSort(float precos[], char produtos[][50], int tamanho, int ordem)
 
         for (j = 0; j < tamanho - i - 1; j++)
         {
+            // Condicional pra saber a ordem de ordenação (crescente ou decrescente)
             int condicao = ordem == 1 ? (precos[j] > precos[j + 1]) : (precos[j] < precos[j + 1]);
 
+            // Parte onde ocorrem as trocas
             if (condicao)
             {
                 temp_preco = precos[j];
