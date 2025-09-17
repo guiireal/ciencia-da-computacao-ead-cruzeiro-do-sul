@@ -1,1 +1,0 @@
-CMakeLists.txt not found in D:\Gui\Tech\Universidades\cruzeiro-do-sul\bacharel-ciencia-da-computacao Select CMakeLists.txt
