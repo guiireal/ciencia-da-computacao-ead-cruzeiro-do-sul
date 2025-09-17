@@ -1,15 +1,13 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int numero_secreto = 7;
     int chute;
 
     printf("Digite o seu chute: ");
     scanf("%d", &chute);
 
-    while (chute != numero_secreto)
-    {
+    while (chute != numero_secreto) {
         printf("Voce errou garotinho! Tente novamente: ");
         scanf("%d", &chute);
     }

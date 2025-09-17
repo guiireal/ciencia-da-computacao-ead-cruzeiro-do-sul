@@ -11,8 +11,7 @@
  */
 void bubbleSort(float precos[], char produtos[][50], int tamanho, int ordem);
 
-int main()
-{
+int main() {
     // Configuração para suportar caracteres especiais no Windows 11
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
@@ -24,8 +23,7 @@ int main()
 
     printf("Bem vindo ao mercado Nova Esperança!\n\n");
 
-    for (int i = 0; i < MAX_PRODUTOS; i++)
-    {
+    for (int i = 0; i < MAX_PRODUTOS; i++) {
         printf("Digite o nome do produto %d: ", i + 1);
         scanf("%s", produtos[i]);
         printf("Digite o preço do produto %d: ", i + 1);
@@ -34,8 +32,7 @@ int main()
 
     printf("\nPreço dos produtos\n\n");
 
-    for (int i = 0; i < MAX_PRODUTOS; i++)
-    {
+    for (int i = 0; i < MAX_PRODUTOS; i++) {
         printf("Produto: %s - Preço: R$ %.2f\n", produtos[i], precos[i]);
     }
 
@@ -59,25 +56,21 @@ int main()
  * @param tamanho Tamanho dos vetores.
  * @param ordem Ordem de ordenação: 1 para crescente, 0 para decrescente.
  */
-void bubbleSort(float precos[], char produtos[][50], int tamanho, int ordem)
-{
+void bubbleSort(float precos[], char produtos[][50], int tamanho, int ordem) {
     int i, j;
     float temp_preco;
     char temp_produto[50];
     int trocou;
 
-    for (i = 0; i < tamanho - 1; i++)
-    {
+    for (i = 0; i < tamanho - 1; i++) {
         trocou = 0;
 
-        for (j = 0; j < tamanho - i - 1; j++)
-        {
+        for (j = 0; j < tamanho - i - 1; j++) {
             // Condicional pra saber a ordem de ordenação (crescente ou decrescente)
             int condicao = ordem == 1 ? (precos[j] > precos[j + 1]) : (precos[j] < precos[j + 1]);
 
             // Parte onde ocorrem as trocas
-            if (condicao)
-            {
+            if (condicao) {
                 temp_preco = precos[j];
                 precos[j] = precos[j + 1];
                 precos[j + 1] = temp_preco;
@@ -90,16 +83,14 @@ void bubbleSort(float precos[], char produtos[][50], int tamanho, int ordem)
             }
         }
 
-        if (trocou == 0)
-        {
+        if (trocou == 0) {
             break;
         }
     }
 
     printf("\nProdutos ordenados pelo preço (%s):\n\n", ordem == 1 ? "Crescente" : "Decrescente");
 
-    for (i = 0; i < tamanho; i++)
-    {
+    for (i = 0; i < tamanho; i++) {
         printf("Produto: %s - Preço: R$ %.2f\n", produtos[i], precos[i]);
     }
 }
