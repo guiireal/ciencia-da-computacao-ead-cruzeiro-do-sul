@@ -3,7 +3,7 @@
 #include <windows.h>
 
 int main() {
-    // Só para imprimir acentuação sem problemas
+    // Só para imprimir com acentuação sem problemas
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
     setlocale(LC_ALL, ".UTF-8");
