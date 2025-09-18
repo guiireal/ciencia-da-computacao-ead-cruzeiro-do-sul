@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Gui\\Tech\\Universidades\\cruzeiro-do-sul\\bacharel-ciencia-da-computacao\\1_semestre\\algoritmos_e_pensamento_computacional\\ConsoleApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD92D6E-C944-4DE8-9972-3A256A6321CF}|ConsoleApplication.vcxproj|D:\\Gui\\Tech\\Universidades\\cruzeiro-do-sul\\bacharel-ciencia-da-computacao\\1_semestre\\algoritmos_e_pensamento_computacional\\ConsoleApplication\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2AD92D6E-C944-4DE8-9972-3A256A6321CF}|ConsoleApplication.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "D:\\Gui\\Tech\\Universidades\\cruzeiro-do-sul\\bacharel-ciencia-da-computacao\\1_semestre\\algoritmos_e_pensamento_computacional\\ConsoleApplication\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "D:\\Gui\\Tech\\Universidades\\cruzeiro-do-sul\\bacharel-ciencia-da-computacao\\1_semestre\\algoritmos_e_pensamento_computacional\\ConsoleApplication\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-09-18T02:49:02.45Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
