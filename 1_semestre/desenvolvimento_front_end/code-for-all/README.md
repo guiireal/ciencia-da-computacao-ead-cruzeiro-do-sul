@@ -1,4 +1,4 @@
-# ONG Digital
+# ONG Digital - Code for All
 
 ## Visão Geral da Plataforma
 
