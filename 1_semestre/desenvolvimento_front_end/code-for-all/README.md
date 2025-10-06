@@ -113,18 +113,6 @@ code-for-all/
 2. Abra qualquer arquivo HTML em um navegador moderno
 3. Navegue entre as páginas usando o menu
 
-## 📖 Documentação Técnica
-
-A documentação completa está disponível em:
-`/documentacao-tecnica/DOCS.md`
-
-Inclui:
-- Especificação detalhada dos formulários
-- Documentação dos gráficos e visualizações
-- Relatório de validação HTML (Score: 100/100)
-- Guia de melhorias implementadas
-- Recomendações para próximas fases
-
 ## 🏆 Validação
 
 Todas as páginas foram validadas e alcançaram **100/100** nos critérios:
