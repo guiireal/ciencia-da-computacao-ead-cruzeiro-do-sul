@@ -187,7 +187,3 @@ Desenvolvido como projeto acadêmico para o curso de Ciência da Computação - 
 
 - **Comunicação e transparência**: blog com notícias e atualizações; newsletter para engajamento; área de imprensa com releases; central de documentos públicos.
 
----
-
-**Data de conclusão:** Outubro de 2025  
-**Versão:** 1.0 - 100% Validado ✅
