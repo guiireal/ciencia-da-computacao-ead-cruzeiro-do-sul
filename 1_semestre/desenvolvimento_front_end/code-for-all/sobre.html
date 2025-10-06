@@ -54,22 +54,22 @@
       <section id="squad">
         <h2>Nossos Valores</h2>
         <article>
-          <img src="..." alt="foto" />
+          <img src="/assets/images/pessoa-1.png" alt="foto" />
           <h3>Nome</h3>
           <p>Cargo</p>
         </article>
         <article>
-          <img src="..." alt="foto" />
+          <img src="/assets/images/pessoa-2.png" alt="foto" />
           <h3>Nome</h3>
           <p>Cargo</p>
         </article>
         <article>
-          <img src="..." alt="foto" />
+          <img src="/assets/images/pessoa-3.png" alt="foto" />
           <h3>Nome</h3>
           <p>Cargo</p>
         </article>
         <article>
-          <img src="..." alt="foto" />
+          <img src="/assets/images/pessoa-4.png" alt="foto" />
           <h3>Nome</h3>
           <p>Cargo</p>
         </article>
@@ -102,6 +102,37 @@
           <span>Total <span>+15%</span></span>
           <div class="charts">
             <canvas id="bar-chart" width="800" height="600">
+              Seu navegador não suporta canvas.
+            </canvas>
+          </div>
+        </article>
+      </section>
+
+      <!-- Distribuição de Recursos -->
+      <section id="recursos">
+        <h2>Distribuição de Recursos por Projeto</h2>
+        <article>
+          <p>
+            Veja como nossos recursos são distribuídos entre os diferentes
+            projetos sociais.
+          </p>
+          <div class="charts">
+            <canvas id="pie-chart" width="600" height="600">
+              Seu navegador não suporta canvas.
+            </canvas>
+          </div>
+        </article>
+      </section>
+
+      <!-- Evolução de Voluntários -->
+      <section id="voluntarios">
+        <h2>Evolução de Voluntários ao Longo do Tempo</h2>
+        <article>
+          <p>
+            Acompanhe o crescimento do número de voluntários nos últimos anos.
+          </p>
+          <div class="charts">
+            <canvas id="line-chart" width="800" height="400">
               Seu navegador não suporta canvas.
             </canvas>
           </div>
@@ -146,5 +177,8 @@
       </nav>
       <p>2025 Code for All. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Scripts para os gráficos -->
+    <script src="/js/charts.js"></script>
   </body>
 </html>
