@@ -101,13 +101,6 @@ code-for-all/
 - ✅ Links de download com informações de tamanho e formato
 - ✅ Lazy loading em imagens
 
-### CSS
-- ✅ Arquivo de estilos base criado
-- ✅ Variáveis CSS para cores
-- ✅ Classe `.visually-hidden` para acessibilidade
-- ✅ Estilos para botões e formulários
-- ✅ Estados de foco visíveis
-
 ### JavaScript
 - ✅ Script com atributo `defer`
 - ✅ Path relativo corrigido
