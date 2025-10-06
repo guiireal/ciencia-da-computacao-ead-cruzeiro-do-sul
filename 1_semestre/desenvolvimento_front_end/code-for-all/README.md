@@ -186,4 +186,3 @@ Desenvolvido como projeto acadêmico para o curso de Ciência da Computação - 
 - **Captação de recursos**: campanhas de arrecadação; sistema de doações on-line; metas e progresso em tempo real; relatórios de prestação de contas;
 
 - **Comunicação e transparência**: blog com notícias e atualizações; newsletter para engajamento; área de imprensa com releases; central de documentos públicos.
-
