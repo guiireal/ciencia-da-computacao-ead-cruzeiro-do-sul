@@ -29,14 +29,10 @@ code-for-all/
 ├── blog.html               # Blog e notícias
 ├── contato.html            # Formulário de contato
 ├── assets/
-│   ├── css/
-│   │   └── style.css       # Estilos base
+│   ├── js/
+│   │   └── charts.js       # Gráficos Canvas
 │   ├── images/             # Imagens do projeto
 │   └── audios/             # Áudios de depoimentos
-├── js/
-│   └── charts.js           # Gráficos Canvas
-├── documentacao-tecnica/
-│   └── DOCS.md             # Documentação completa
 └── wireframes/             # Wireframes das páginas
 ```
 
