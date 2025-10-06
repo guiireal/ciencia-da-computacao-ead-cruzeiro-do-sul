@@ -101,10 +101,6 @@ code-for-all/
 - ✅ Links de download com informações de tamanho e formato
 - ✅ Lazy loading em imagens
 
-### JavaScript
-- ✅ Script com atributo `defer`
-- ✅ Path relativo corrigido
-
 ### Acessibilidade
 - ✅ ARIA labels em navegação
 - ✅ SVG icons com títulos descritivos
