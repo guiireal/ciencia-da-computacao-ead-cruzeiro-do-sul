@@ -136,7 +136,7 @@ Projeto acadêmico desenvolvido para fins educacionais.
 
 ## 👥 Autor
 
-Desenvolvido como projeto acadêmico para o curso de Ciência da Computação - Universidade Cruzeiro do Sul.
+Desenvolvido como projeto acadêmico para o curso de Ciência da Computação - Universidade Cruzeiro do Sul, disciplina Desenvolvimento Front-end.
 
 ---
 
