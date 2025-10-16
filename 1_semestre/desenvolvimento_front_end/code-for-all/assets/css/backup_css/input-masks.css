@@ -1,0 +1,75 @@
+/* ========================================
+   MÁSCARAS DE INPUT (APENAS CSS)
+   ======================================== */
+
+#cpf::placeholder,
+#phone::placeholder,
+#cep::placeholder {
+  font-family: monospace;
+  letter-spacing: 0.5px;
+}
+
+#cpf:valid,
+#phone:valid,
+#cep:valid {
+  border-color: var(--color-success);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%234caf50' d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+#cpf:invalid:not(:placeholder-shown),
+#phone:invalid:not(:placeholder-shown),
+#cep:invalid:not(:placeholder-shown) {
+  border-color: var(--color-accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='%23ff6384' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3Cpath fill='%23ff6384' d='M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+#cpf:focus::after,
+#phone:focus::after,
+#cep:focus::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background-color: var(--color-neutral-900);
+  color: var(--color-white);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="date"]:valid {
+  border-color: var(--color-success);
+}
+
+input[type="text"]:invalid:not(:placeholder-shown),
+input[type="email"]:invalid:not(:placeholder-shown),
+input[type="tel"]:invalid:not(:placeholder-shown),
+input[type="date"]:invalid:not(:placeholder-shown) {
+  border-color: var(--color-accent);
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input:invalid:not(:placeholder-shown) + .help-text {
+  display: block;
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  margin-top: var(--space-1);
+}
+
+.help-text {
+  display: none;
+}

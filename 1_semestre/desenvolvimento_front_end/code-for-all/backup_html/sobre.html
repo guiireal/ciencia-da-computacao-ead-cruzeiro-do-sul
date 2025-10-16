@@ -4,46 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code for All - Sobre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Cabeçalho e menu -->
     <header>
-      <!-- Nome da ONG -->
-      <div>
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          aria-label="Logo Code for All"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="40" height="40" rx="8" fill="#36A2EB" />
-          <text
-            x="20"
-            y="28"
-            font-size="24"
-            fill="white"
-            text-anchor="middle"
-            font-family="monospace"
-            font-weight="bold"
+      <div class="container">
+        <!-- Nome da ONG -->
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            aria-label="Logo Code for All"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            &lt;/&gt;
-          </text>
-        </svg>
-        <span>Code for All</span>
+            <rect width="40" height="40" rx="8" fill="#36A2EB" />
+            <text
+              x="20"
+              y="28"
+              font-size="24"
+              fill="white"
+              text-anchor="middle"
+              font-family="monospace"
+              font-weight="bold"
+            >
+              &lt;/&gt;
+            </text>
+          </svg>
+          <span>Code for All</span>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Seja um voluntário</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Menu de navegação -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
-          <li><a href="doacoes.html">Doações</a></li>
-          <li><a href="transparencia.html">Transparência</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Conteúdo principal -->
@@ -149,7 +158,7 @@
             projetos sociais.
           </p>
           <div class="charts">
-            <canvas id="pie-chart" width="600" height="600">
+            <canvas id="pie-chart" width="800" height="600">
               Seu navegador não suporta canvas.
             </canvas>
           </div>
@@ -177,7 +186,7 @@
       <!-- Links -->
       <nav>
         <ul>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="cadastro.html">Seja um voluntário</a></li>
           <li><a href="doacoes.html">Doações</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>

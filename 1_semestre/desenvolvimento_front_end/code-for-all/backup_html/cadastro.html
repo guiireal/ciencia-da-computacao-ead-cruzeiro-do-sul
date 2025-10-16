@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code for All - Seja um voluntário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/input-masks.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho e menu -->
+    <header>
+      <div class="container">
+        <!-- Nome da ONG -->
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            aria-label="Logo Code for All"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="40" height="40" rx="8" fill="#36A2EB" />
+            <text
+              x="20"
+              y="28"
+              font-size="24"
+              fill="white"
+              text-anchor="middle"
+              font-family="monospace"
+              font-weight="bold"
+            >
+              &lt;/&gt;
+            </text>
+          </svg>
+          <span>Code for All</span>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Seja um voluntário</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <h1>Seja um Voluntário</h1>
+      <p class="subtitle">
+        Junte-se à nossa comunidade e faça a diferença através da tecnologia.
+      </p>
+
+      <!-- Como funciona -->
+      <section id="how-it-works">
+        <h2>Como funciona</h2>
+        <ul>
+          <li>
+            <strong>Explore as Oportunidades</strong>
+            <p>Descubra as diversas vagas de cadastro em nossos projetos</p>
+          </li>
+          <li>
+            <strong>Inscreva-se</strong>
+            <p>
+              Preencha o formulário com seus dados e conte-nos sobre suas
+              habilidades
+            </p>
+          </li>
+          <li>
+            <strong>Faça a Diferença</strong>
+            <p>
+              Participe de projetos que transformam vidas através da tecnologia
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Oportunidades -->
+      <section id="oportunities">
+        <h2>Oportunidades atuais</h2>
+        <article>
+          <div>
+            <small>Vaga</small>
+            <h3>Nome da vaga</h3>
+            <p>Descrição da vaga</p>
+            <button type="button">Ver Detalhes</button>
+          </div>
+          <img
+            src="./assets/images/vaga-1.png"
+            alt="Ilustração de oportunidade de cadastro em educação digital"
+          />
+        </article>
+        <article>
+          <div>
+            <small>Vaga</small>
+            <h3>Nome da vaga</h3>
+            <p>Descrição da vaga</p>
+            <button type="button">Ver Detalhes</button>
+          </div>
+          <img
+            src="./assets/images/vaga-2.png"
+            alt="Ilustração de oportunidade de cadastro em desenvolvimento"
+          />
+        </article>
+        <article>
+          <div>
+            <small>Vaga</small>
+            <h3>Nome da vaga</h3>
+            <p>Descrição da vaga</p>
+            <button type="button">Ver Detalhes</button>
+          </div>
+          <img
+            src="./assets/images/vaga-3.png"
+            alt="Ilustração de oportunidade de cadastro em mentoria"
+          />
+        </article>
+      </section>
+
+      <!-- Formulário de inscrição -->
+      <section id="subscribe">
+        <h2>Formulário de Inscrição</h2>
+        <form action="/api/cadastro" method="POST">
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <div class="form-group">
+              <label for="name">Nome Completo *</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                minlength="3"
+                maxlength="100"
+                placeholder="Digite seu nome completo"
+                pattern="[A-Za-zÀ-ÿ\s]{3,100}"
+                title="Digite seu nome completo (apenas letras e espaços)"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="seuemail@exemplo.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Digite um e-mail válido"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="cpf">CPF *</label>
+              <input
+                id="cpf"
+                name="cpf"
+                type="text"
+                required
+                placeholder="000.000.000-00"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                maxlength="14"
+                title="Digite o CPF no formato: 000.000.000-00"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefone *</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                placeholder="(00) 00000-0000"
+                pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+                maxlength="15"
+                title="Digite o telefone no formato: (00) 00000-0000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="birthdate">Data de Nascimento *</label>
+              <input
+                id="birthdate"
+                name="birthdate"
+                type="date"
+                required
+                min="1924-01-01"
+                max="2007-12-31"
+                title="Você deve ter entre 18 e 100 anos"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <div class="form-group">
+              <label for="cep">CEP *</label>
+              <input
+                id="cep"
+                name="cep"
+                type="text"
+                required
+                placeholder="00000-000"
+                pattern="\d{5}-\d{3}"
+                maxlength="9"
+                title="Digite o CEP no formato: 00000-000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="address">Endereço *</label>
+              <input
+                id="address"
+                name="address"
+                type="text"
+                required
+                minlength="5"
+                maxlength="200"
+                placeholder="Rua, Avenida, etc."
+                title="Digite seu endereço completo"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="city">Cidade *</label>
+              <input
+                id="city"
+                name="city"
+                type="text"
+                required
+                minlength="2"
+                maxlength="100"
+                placeholder="Digite sua cidade"
+                pattern="[A-Za-zÀ-ÿ\s]{2,100}"
+                title="Digite o nome da cidade (apenas letras)"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="state">Estado *</label>
+              <select id="state" name="state" required>
+                <option value="">Selecione seu estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Informações Profissionais</legend>
+
+            <div class="form-group">
+              <label for="skills">Habilidades e Experiências *</label>
+              <textarea
+                name="skills"
+                id="skills"
+                rows="6"
+                required
+                minlength="20"
+                maxlength="500"
+                placeholder="Descreva suas habilidades e experiências relevantes (mínimo 20 caracteres)"
+                title="Descreva suas habilidades com pelo menos 20 caracteres"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="availability">Disponibilidade *</label>
+              <select id="availability" name="availability" required>
+                <option value="">Selecione sua disponibilidade</option>
+                <option value="part_time">Meio período</option>
+                <option value="full_time">Período integral</option>
+                <option value="remote">Remoto</option>
+                <option value="weekends">Finais de semana</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <p class="form-note">* Campos obrigatórios</p>
+          <button type="submit">Enviar Inscrição</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <!-- Links -->
+      <nav>
+        <ul>
+          <li><a href="cadastro.html">Seja um voluntário</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <!-- Redes sociais -->
+      <nav aria-label="Redes sociais">
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/codeforall"
+              aria-label="Siga-nos no Twitter/X"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/codeforall"
+              aria-label="Siga-nos no Facebook"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/codeforall"
+              aria-label="Siga-nos no Instagram"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/company/codeforall"
+              aria-label="Siga-nos no LinkedIn"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p>2025 Code for All. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -3,127 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code for All - Contato</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Code for All - Transparência</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Cabeçalho e menu -->
     <header>
-      <!-- Nome da ONG -->
-      <div>
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          aria-label="Logo Code for All"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="40" height="40" rx="8" fill="#36A2EB" />
-          <text
-            x="20"
-            y="28"
-            font-size="24"
-            fill="white"
-            text-anchor="middle"
-            font-family="monospace"
-            font-weight="bold"
+      <div class="container">
+        <!-- Nome da ONG -->
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            aria-label="Logo Code for All"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            &lt;/&gt;
-          </text>
-        </svg>
-        <span>Code for All</span>
+            <rect width="40" height="40" rx="8" fill="#36A2EB" />
+            <text
+              x="20"
+              y="28"
+              font-size="24"
+              fill="white"
+              text-anchor="middle"
+              font-family="monospace"
+              font-weight="bold"
+            >
+              &lt;/&gt;
+            </text>
+          </svg>
+          <span>Code for All</span>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Seja um voluntário</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Menu de navegação -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
-          <li><a href="doacoes.html">Doações</a></li>
-          <li><a href="transparencia.html">Transparência</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
-      <!-- Seção do blog e notícias -->
-      <section id="blog-and-news">
-        <h1>Blog e notícias</h1>
+      <h1>Transparência</h1>
+
+      <!-- Seção de relatórios financeiros -->
+      <section class="financial-reports">
+        <h2>Relatórios financeiros</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-          eligendi!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          quam in minima, reiciendis ea placeat delectus dolore voluptatem
+          quisquam nihil.
         </p>
-        <section id="news">
-          <article>
-            <h2>Título da notícia 1</h2>
-            <p>Descrição da notíci 1</p>
-            <picture>
-              <source
-                srcset="./assets/images/noticia-1.png"
-                media="(width >= 600px)"
-              />
-              <img
-                src="./assets/images/noticia-1.png"
-                alt="Imagem ilustrativa da notícia sobre tecnologia e educação"
-                loading="lazy"
-              />
-            </picture>
-          </article>
-          <article>
-            <h2>Título da notícia 2</h2>
-            <p>Descrição da notícia 2</p>
-            <picture>
-              <source
-                srcset="./assets/images/noticia-2.png"
-                media="(width >= 600px)"
-              />
-              <img
-                src="./assets/images/noticia-2.png"
-                alt="Imagem ilustrativa da notícia sobre inclusão digital"
-                loading="lazy"
-              />
-            </picture>
-          </article>
-          <article>
-            <h2>Título da notícia 3</h2>
-            <p>Descrição da notícia 3</p>
-            <picture>
-              <source
-                srcset="./assets/images/noticia-3.png"
-                media="(width >= 600px)"
-              />
-              <img
-                src="./assets/images/noticia-3.png"
-                alt="Imagem ilustrativa da notícia sobre capacitação profissional"
-                loading="lazy"
-              />
-            </picture>
-          </article>
-        </section>
+        <article>
+          <h3>Relatório Financeiro 2024</h3>
+          <p><small>PDF - 2.3 MB - Atualizado em 01/10/2025</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
+        <article>
+          <h3>Relatório Financeiro 2023</h3>
+          <p><small>PDF - 1.8 MB - Atualizado em 15/01/2024</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
+        <article>
+          <h3>Relatório Financeiro 2022</h3>
+          <p><small>PDF - 1.5 MB - Atualizado em 20/01/2023</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
       </section>
 
-      <!-- Newsletter -->
-      <section id="newsletter">
-        <h2>Assine nossa newsletter</h2>
+      <!-- Seção de prestação de contas -->
+      <section id="accountability">
+        <h2>Prestação de contas</h2>
         <p>
-          Receba as últimas notícias e atualizações diretamente no seu e-mail
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          quam in minima, reiciendis ea placeat delectus dolore voluptatem
+          quisquam nihil.
         </p>
-        <form action="/api/newsletter" method="POST">
-          <label for="newsletter-email" class="visually-hidden"
-            >E-mail para newsletter</label
-          >
-          <input
-            id="newsletter-email"
-            name="email"
-            type="email"
-            required
-            placeholder="Seu e-mail"
-          />
-          <button type="submit">Assinar</button>
-        </form>
+        <article>
+          <h3>Prestação de Contas 2024</h3>
+          <p><small>PDF - 3.1 MB - Atualizado em 05/10/2025</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
+        <article>
+          <h3>Prestação de Contas 2023</h3>
+          <p><small>PDF - 2.9 MB - Atualizado em 20/01/2024</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
+        <article>
+          <h3>Prestação de Contas 2022</h3>
+          <p><small>PDF - 2.5 MB - Atualizado em 25/01/2023</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
+      </section>
+
+      <!-- Seção de documentos públicos -->
+      <section id="public-documents">
+        <h2>Documentos públicos</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          quam in minima, reiciendis ea placeat delectus dolore voluptatem
+          quisquam nihil.
+        </p>
+        <article>
+          <h3>Estatuto Social</h3>
+          <p><small>PDF - 850 KB - Atualizado em 15/03/2024</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
+        <article>
+          <h3>Certidão de Utilidade Pública</h3>
+          <p><small>PDF - 450 KB - Atualizado em 10/05/2023</small></p>
+          <a href="#" download class="button">Download</a>
+        </article>
       </section>
     </main>
 
@@ -132,7 +135,7 @@
       <!-- Links -->
       <nav>
         <ul>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="cadastro.html">Seja um voluntário</a></li>
           <li><a href="doacoes.html">Doações</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>

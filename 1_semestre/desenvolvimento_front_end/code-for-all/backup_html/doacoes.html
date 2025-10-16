@@ -3,121 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code for All - Transparência</title>
+    <title>Code for All - Doações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Cabeçalho e menu -->
     <header>
-      <!-- Nome da ONG -->
-      <div>
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          aria-label="Logo Code for All"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="40" height="40" rx="8" fill="#36A2EB" />
-          <text
-            x="20"
-            y="28"
-            font-size="24"
-            fill="white"
-            text-anchor="middle"
-            font-family="monospace"
-            font-weight="bold"
+      <div class="container">
+        <!-- Nome da ONG -->
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            aria-label="Logo Code for All"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            &lt;/&gt;
-          </text>
-        </svg>
-        <span>Code for All</span>
+            <rect width="40" height="40" rx="8" fill="#36A2EB" />
+            <text
+              x="20"
+              y="28"
+              font-size="24"
+              fill="white"
+              text-anchor="middle"
+              font-family="monospace"
+              font-weight="bold"
+            >
+              &lt;/&gt;
+            </text>
+          </svg>
+          <span>Code for All</span>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Seja um voluntário</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Menu de navegação -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
-          <li><a href="doacoes.html">Doações</a></li>
-          <li><a href="transparencia.html">Transparência</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
-      <h1>Transparência</h1>
-
-      <!-- Seção de relatórios financeiros -->
-      <section class="financial-reports">
-        <h2>Relatórios financeiros</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          quam in minima, reiciendis ea placeat delectus dolore voluptatem
-          quisquam nihil.
-        </p>
-        <article>
-          <h3>Relatório Financeiro 2024</h3>
-          <p><small>PDF - 2.3 MB - Atualizado em 01/10/2025</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
-        <article>
-          <h3>Relatório Financeiro 2023</h3>
-          <p><small>PDF - 1.8 MB - Atualizado em 15/01/2024</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
-        <article>
-          <h3>Relatório Financeiro 2022</h3>
-          <p><small>PDF - 1.5 MB - Atualizado em 20/01/2023</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
-      </section>
-
-      <!-- Seção de prestação de contas -->
-      <section id="accountability">
-        <h2>Prestação de contas</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          quam in minima, reiciendis ea placeat delectus dolore voluptatem
-          quisquam nihil.
-        </p>
-        <article>
-          <h3>Prestação de Contas 2024</h3>
-          <p><small>PDF - 3.1 MB - Atualizado em 05/10/2025</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
-        <article>
-          <h3>Prestação de Contas 2023</h3>
-          <p><small>PDF - 2.9 MB - Atualizado em 20/01/2024</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
-        <article>
-          <h3>Prestação de Contas 2022</h3>
-          <p><small>PDF - 2.5 MB - Atualizado em 25/01/2023</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
-      </section>
-
-      <!-- Seção de documentos públicos -->
-      <section id="public-documents">
-        <h2>Documentos públicos</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          quam in minima, reiciendis ea placeat delectus dolore voluptatem
-          quisquam nihil.
-        </p>
-        <article>
-          <h3>Estatuto Social</h3>
-          <p><small>PDF - 850 KB - Atualizado em 15/03/2024</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
-        <article>
-          <h3>Certidão de Utilidade Pública</h3>
-          <p><small>PDF - 450 KB - Atualizado em 10/05/2023</small></p>
-          <a href="#" download class="button">Download</a>
-        </article>
+      <!-- Seção como doar -->
+      <section id="how-do-contribute">
+        <h1>Como Doar</h1>
+        <h2>Nossas Campanhas</h2>
+        <!-- Lista de campanhas -->
+        <section id="campaings">
+          <article>
+            <img src="./assets/images/doacao-1.png" alt="Campanha 1" />
+            <h3>Título da campanha</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque illo eius placeat.
+            </p>
+          </article>
+          <article>
+            <img src="./assets/images/doacao-2.png" alt="Campanha 2" />
+            <h3>Título da campanha</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque illo eius placeat.
+            </p>
+          </article>
+          <article>
+            <img src="./assets/images/doacao-3.png" alt="Campanha 3" />
+            <h3>Título da campanha</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque illo eius placeat.
+            </p>
+          </article>
+        </section>
+        <h2>Formas de Doar</h2>
+        <form action="/api/doacoes" method="POST">
+          <fieldset>
+            <legend>Selecione a forma de pagamento</legend>
+            <div class="form-group">
+              <input
+                id="credit-card"
+                type="radio"
+                name="type_of_donate"
+                value="credit_card"
+                checked
+              />
+              <label for="credit-card">Cartão de Crédito</label>
+            </div>
+            <div class="form-group">
+              <input id="pix" type="radio" name="type_of_donate" value="pix" />
+              <label for="pix">PIX</label>
+            </div>
+            <div class="form-group">
+              <input
+                id="ticket"
+                type="radio"
+                name="type_of_donate"
+                value="ticket"
+              />
+              <label for="ticket">Boleto</label>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="amount">Valor da Doação (R$)</label>
+            <input
+              id="amount"
+              name="amount"
+              type="number"
+              min="5"
+              step="0.01"
+              required
+              placeholder="50.00"
+            />
+          </div>
+          <button type="submit">Doar Agora</button>
+        </form>
       </section>
     </main>
 
@@ -126,7 +138,7 @@
       <!-- Links -->
       <nav>
         <ul>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="cadastro.html">Seja um voluntário</a></li>
           <li><a href="doacoes.html">Doações</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>

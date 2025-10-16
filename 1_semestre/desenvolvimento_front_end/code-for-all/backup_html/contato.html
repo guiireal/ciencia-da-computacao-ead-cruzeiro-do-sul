@@ -3,98 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code for All - Projetos</title>
+    <title>Code for All - Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Cabeçalho e menu -->
     <header>
-      <!-- Nome da ONG -->
-      <div>
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          aria-label="Logo Code for All"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="40" height="40" rx="8" fill="#36A2EB" />
-          <text
-            x="20"
-            y="28"
-            font-size="24"
-            fill="white"
-            text-anchor="middle"
-            font-family="monospace"
-            font-weight="bold"
+      <div class="container">
+        <!-- Nome da ONG -->
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            aria-label="Logo Code for All"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            &lt;/&gt;
-          </text>
-        </svg>
-        <span>Code for All</span>
+            <rect width="40" height="40" rx="8" fill="#36A2EB" />
+            <text
+              x="20"
+              y="28"
+              font-size="24"
+              fill="white"
+              text-anchor="middle"
+              font-family="monospace"
+              font-weight="bold"
+            >
+              &lt;/&gt;
+            </text>
+          </svg>
+          <span>Code for All</span>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Seja um voluntário</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Menu de navegação -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
-          <li><a href="doacoes.html">Doações</a></li>
-          <li><a href="transparencia.html">Transparência</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
-      <!-- Seção de projetos -->
-      <section id="projects">
-        <h1>Nossos Projetos</h1>
+      <!-- Formulário de contato -->
+      <section id="contact">
+        <h1>Contato</h1>
         <p>
-          Explore os projetos que estamos desenvolvendo para transformar
-          comunidades através da tecnologia.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+          accusantium?
         </p>
-        <!-- Filtros -->
-        <aside>
-          <h3>Filtros</h3>
-          <ul>
-            <li><a href="#">Educação</a></li>
-            <li><a href="#">Inclusão Digital</a></li>
-            <li><a href="#">Desenvolvimento de Software</a></li>
-          </ul>
-        </aside>
+        <form action="/api/contato" method="POST">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Seu nome"
+              maxlength="100"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="Seu e-mail"
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              required
+              placeholder="Assunto da mensagem"
+              maxlength="100"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              name="message"
+              id="message"
+              required
+              cols="50"
+              rows="10"
+              maxlength="1000"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
 
-        <!-- Detalhes dos projetos -->
-        <section id="project-details">
-          <article>
-            <img
-              src="./assets/images/projetos-sociais-1.png"
-              alt="Projeto de educação digital para comunidades carentes"
-            />
-            <h2>Título do projeto</h2>
-            <p>Descrição do projeto.</p>
-            <button type="button">Ver Detalhes</button>
-          </article>
-          <article>
-            <img
-              src="./assets/images/projetos-sociais-2.png"
-              alt="Projeto de inclusão tecnológica para idosos"
-            />
-            <h2>Título do projeto</h2>
-            <p>Descrição do projeto.</p>
-            <button type="button">Ver Detalhes</button>
-          </article>
-          <article>
-            <img
-              src="./assets/images/projetos-sociais-3.png"
-              alt="Projeto de capacitação em desenvolvimento web"
-            />
-            <h2>Título do projeto</h2>
-            <p>Descrição do projeto.</p>
-            <button type="button">Ver Detalhes</button>
-          </article>
-        </section>
+      <!-- Informações de contato -->
+      <section id="infos">
+        <h2>Informações de contato</h2>
+        <p>Endereço: Lorem ipsum dolor sit amet.</p>
+        <p>Telefone: (11) 92020-2020</p>
       </section>
     </main>
 
@@ -103,7 +126,7 @@
       <!-- Links -->
       <nav>
         <ul>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="cadastro.html">Seja um voluntário</a></li>
           <li><a href="doacoes.html">Doações</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>

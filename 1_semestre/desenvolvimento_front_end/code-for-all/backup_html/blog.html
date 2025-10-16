@@ -3,123 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code for All - Doações</title>
+    <title>Code for All - Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Cabeçalho e menu -->
     <header>
-      <!-- Nome da ONG -->
-      <div>
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          aria-label="Logo Code for All"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect width="40" height="40" rx="8" fill="#36A2EB" />
-          <text
-            x="20"
-            y="28"
-            font-size="24"
-            fill="white"
-            text-anchor="middle"
-            font-family="monospace"
-            font-weight="bold"
+      <div class="container">
+        <!-- Nome da ONG -->
+        <div class="logo">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            aria-label="Logo Code for All"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            &lt;/&gt;
-          </text>
-        </svg>
-        <span>Code for All</span>
+            <rect width="40" height="40" rx="8" fill="#36A2EB" />
+            <text
+              x="20"
+              y="28"
+              font-size="24"
+              fill="white"
+              text-anchor="middle"
+              font-family="monospace"
+              font-weight="bold"
+            >
+              &lt;/&gt;
+            </text>
+          </svg>
+          <span>Code for All</span>
+        </div>
+        <!-- Menu de navegação -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Seja um voluntário</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="transparencia.html">Transparência</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Menu de navegação -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
-          <li><a href="doacoes.html">Doações</a></li>
-          <li><a href="transparencia.html">Transparência</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
-      <!-- Seção como doar -->
-      <section id="how-do-contribute">
-        <h1>Como Doar</h1>
-        <h2>Nossas Campanhas</h2>
-        <!-- Lista de campanhas -->
-        <section id="campaings">
+      <!-- Seção do blog e notícias -->
+      <section id="blog-and-news">
+        <h1>Blog e notícias</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+          eligendi!
+        </p>
+        <section id="news">
           <article>
-            <img src="./assets/images/doacao-1.png" alt="Campanha 1" />
-            <h3>Título da campanha</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque illo eius placeat.
-            </p>
+            <h2>Título da notícia 1</h2>
+            <p>Descrição da notíci 1</p>
+            <picture>
+              <source
+                srcset="./assets/images/noticia-1.png"
+                media="(width >= 600px)"
+              />
+              <img
+                src="./assets/images/noticia-1.png"
+                alt="Imagem ilustrativa da notícia sobre tecnologia e educação"
+                loading="lazy"
+              />
+            </picture>
           </article>
           <article>
-            <img src="./assets/images/doacao-2.png" alt="Campanha 2" />
-            <h3>Título da campanha</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque illo eius placeat.
-            </p>
+            <h2>Título da notícia 2</h2>
+            <p>Descrição da notícia 2</p>
+            <picture>
+              <source
+                srcset="./assets/images/noticia-2.png"
+                media="(width >= 600px)"
+              />
+              <img
+                src="./assets/images/noticia-2.png"
+                alt="Imagem ilustrativa da notícia sobre inclusão digital"
+                loading="lazy"
+              />
+            </picture>
           </article>
           <article>
-            <img src="./assets/images/doacao-3.png" alt="Campanha 3" />
-            <h3>Título da campanha</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Doloremque illo eius placeat.
-            </p>
+            <h2>Título da notícia 3</h2>
+            <p>Descrição da notícia 3</p>
+            <picture>
+              <source
+                srcset="./assets/images/noticia-3.png"
+                media="(width >= 600px)"
+              />
+              <img
+                src="./assets/images/noticia-3.png"
+                alt="Imagem ilustrativa da notícia sobre capacitação profissional"
+                loading="lazy"
+              />
+            </picture>
           </article>
         </section>
-        <h2>Formas de Doar</h2>
-        <form action="/api/doacoes" method="POST">
-          <fieldset>
-            <legend>Selecione a forma de pagamento</legend>
-            <div class="form-group">
-              <input
-                id="credit-card"
-                type="radio"
-                name="type_of_donate"
-                value="credit_card"
-                checked
-              />
-              <label for="credit-card">Cartão de Crédito</label>
-            </div>
-            <div class="form-group">
-              <input id="pix" type="radio" name="type_of_donate" value="pix" />
-              <label for="pix">PIX</label>
-            </div>
-            <div class="form-group">
-              <input
-                id="ticket"
-                type="radio"
-                name="type_of_donate"
-                value="ticket"
-              />
-              <label for="ticket">Boleto</label>
-            </div>
-          </fieldset>
-          <div class="form-group">
-            <label for="amount">Valor da Doação (R$)</label>
-            <input
-              id="amount"
-              name="amount"
-              type="number"
-              min="5"
-              step="0.01"
-              required
-              placeholder="50.00"
-            />
-          </div>
-          <button type="submit">Doar Agora</button>
+      </section>
+
+      <!-- Newsletter -->
+      <section id="newsletter">
+        <h2>Assine nossa newsletter</h2>
+        <p>
+          Receba as últimas notícias e atualizações diretamente no seu e-mail
+        </p>
+        <form action="/api/newsletter" method="POST">
+          <label for="newsletter-email" class="visually-hidden"
+            >E-mail para newsletter</label
+          >
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            required
+            placeholder="Seu e-mail"
+          />
+          <button type="submit">Assinar</button>
         </form>
       </section>
     </main>
@@ -129,7 +140,7 @@
       <!-- Links -->
       <nav>
         <ul>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="cadastro.html">Seja um voluntário</a></li>
           <li><a href="doacoes.html">Doações</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
